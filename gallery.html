@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Experiences - Pei Xin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="description" content="My university and internship experiences." />
+  </head>
+  <body class ="page">
+    <main class="container">
+      <section class = "intro">
+        <div class="intro__text">
+          <h1>Gallery</h1>
+          <p>A collection of my favorite images and artwork.</p>
+        </div>
+        <div class="intro__image">
+          <img src="images/gallery.png" alt="Gallery">
+        </div>
+      </section>
+
+        <!-- Cats-anime navigation -->
+      <nav class="cat-nav" aria-label="Site" aria-orientation="vertical">
+        <a class="cat-card" href="index.html">
+          <div class="cat"><div class="ear left"></div><div class="ear right"></div>
+            <div class="face"><span class="eye left"></span><span class="eye right"></span><span class="nose"></span></div>
+            <div class="tail"></div>
+          </div><span class="label">Home</span>
+        </a>
+
+        <a class="cat-card" href="experiences.html" aria-current="page">
+          <div class="cat tabby"><div class="ear left"></div><div class="ear right"></div>
+            <div class="face"><span class="eye left"></span><span class="eye right"></span><span class="nose"></span>
+              <span class="stripe s1"></span><span class="stripe s2"></span>
+            </div><div class="tail"></div>
+          </div><span class="label">Experiences</span>
+        </a>
+
+        <a class="cat-card" href="interests.html">
+          <div class="cat calico"><div class="ear left"></div><div class="ear right"></div>
+            <div class="face"><span class="eye left"></span><span class="eye right"></span><span class="nose"></span></div>
+            <div class="patch p1"></div><div class="patch p2"></div><div class="tail"></div>
+          </div><span class="label">Interests</span>
+        </a>
+
+        <a class="cat-card" href="gallery.html">
+          <div class="cat black"><div class="ear left"></div><div class="ear right"></div>
+            <div class="face"><span class="eye left glow"></span><span class="eye right glow"></span><span class="nose"></span></div>
+            <div class="tail"></div>
+          </div><span class="label">Gallery</span>
+        </a>
+      </nav>
+
+<section class="gallery container" aria-label="Gallery">
+  <!-- hidden radios must be siblings of .panels -->
+  <input type="radio" name="cat" id="tab-places" checked hidden>
+  <input type="radio" name="cat" id="tab-music" hidden>
+  <input type="radio" name="cat" id="tab-books" hidden>
+
+  <!-- Tabs (labels only) -->
+  <div class="tabs">
+    <label for="tab-places" class="tab">Places I Went</label>
+    <label for="tab-music"  class="tab">Music I Listen To</label>
+    <label for="tab-books" class="tab">Books I Read</label>
+  </div>
+
+  <!-- Panels -->
+  <div class="panels">
+    <div class="panel panel-books">
+      <div class="grid">
+        <article class="card">
+          <img src="images/books/book1.jpg" alt="The White Olive Tree book cover">
+          <div class="card__body">
+            <h3 class="card__title">The White Olive Tree</h3>
+            <p class="card__desc">The white olive tree itself symbolizes peace, hope, and new beginnings.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/books/book2.jpg" alt="Precisely out of control book cover">
+          <div class="card__body">
+            <h3 class="card__title">Precisely Out of Control</h3>
+            <p class="card__desc">A memoir on learning and identity.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/books/book3.jpg" alt="Companionship Is the Most Luxurious Gift in the World book cover">
+          <div class="card__body">
+            <h3 class="card__title">Companionship Is the Most Luxurious Gift in the World</h3>
+            <p class="card__desc">A reflection on the importance of relationships.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="panel panel-places">
+      <div class="grid">
+        <article class="card">
+          <img src="images/places/netherlands1.jpg" alt="Brussels skyline">
+          <div class="card__body">
+            <h3 class="card__title">Utrecht, Netherlands</h3>
+            <p class="card__desc">31 August 2025</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/places/brussels.jpg" alt="Brussels skyline">
+          <div class="card__body">
+            <h3 class="card__title">Brussels, Belgium</h3>
+            <p class="card__desc">6 - 7 September 2025</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/places/shenzhen.jpg" alt="Shenzhen skyline">
+          <div class="card__body">
+            <h3 class="card__title">Shenzhen, China</h3>
+            <p class="card__desc">15 May - 9 August 2025</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/places/fukuoka.jpg" alt="Fukuoka Mount Aso">
+          <div class="card__body">
+            <h3 class="card__title">Fukuoka, Japan</h3>
+            <p class="card__desc">23-30 December 2024</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/places/taiwan.jpg" alt="Taipei night market">
+          <div class="card__body">
+            <h3 class="card__title">Taipei, Taiwan</h3>
+            <p class="card__desc">16-21 December 2024</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/places/bali.jpg" alt="Bali sunset">
+          <div class="card__body">
+            <h3 class="card__title">Bali, Indonesia</h3>
+            <p class="card__desc">9-12 December 2024</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/places/jakarta.jpg" alt="Jakarta internship">
+          <div class="card__body">
+            <h3 class="card__title">Jakarta, Indonesia</h3>
+            <p class="card__desc">25 July - 9 August 2024</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/places/taiwan2.jpg" alt="First Taiwan trip">
+          <div class="card__body">
+            <h3 class="card__title">Taipei, Taiwan</h3>
+            <p class="card__desc">April 2023</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="panel panel-music">
+      <div class="grid">
+        <article class="card">
+          <img src="images/music/music1.jpg" alt="Joker Xue concert">
+          <div class="card__body">
+            <h3 class="card__title">薛之谦 Joker Xue's Concert</h3>
+            <p class="card__desc">15 February 2025.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/music/music2.jpg" alt="Money's Concert">
+          <div class="card__body">
+            <h3 class="card__title">门尼 Money's Concert</h3>
+            <p class="card__desc">22 June 2025.</p>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+    </main>
+
+        <footer class="site-footer">
+      <p>© <span id="year"></span> Pei Xin · Amsterdam</p>
+    </footer>
+  </body>
+</html>

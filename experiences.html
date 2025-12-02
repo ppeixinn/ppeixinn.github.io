@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Experiences - Pei Xin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="description" content="My university and internship experiences." />
+  </head>
+  <body class ="page">
+    <main class="container">
+      <section class = "intro">
+        <div class="intro__text">
+          <h1>Experiences</h1>
+          <p>A summary of my academic and internship experiences.</p>
+        </div>
+        <div class="intro__image">
+          <img src="images/experiences.png" alt="Experiences">
+        </div>
+      </section>
+
+        <!-- Cats-anime navigation -->
+      <nav class="cat-nav" aria-label="Site" aria-orientation="vertical">
+        <a class="cat-card" href="index.html">
+          <div class="cat"><div class="ear left"></div><div class="ear right"></div>
+            <div class="face"><span class="eye left"></span><span class="eye right"></span><span class="nose"></span></div>
+            <div class="tail"></div>
+          </div><span class="label">Home</span>
+        </a>
+
+        <a class="cat-card" href="experiences.html" aria-current="page">
+          <div class="cat tabby"><div class="ear left"></div><div class="ear right"></div>
+            <div class="face"><span class="eye left"></span><span class="eye right"></span><span class="nose"></span>
+              <span class="stripe s1"></span><span class="stripe s2"></span>
+            </div><div class="tail"></div>
+          </div><span class="label">Experiences</span>
+        </a>
+
+        <a class="cat-card" href="interests.html">
+          <div class="cat calico"><div class="ear left"></div><div class="ear right"></div>
+            <div class="face"><span class="eye left"></span><span class="eye right"></span><span class="nose"></span></div>
+            <div class="patch p1"></div><div class="patch p2"></div><div class="tail"></div>
+          </div><span class="label">Interests</span>
+        </a>
+
+        <a class="cat-card" href="gallery.html">
+          <div class="cat black"><div class="ear left"></div><div class="ear right"></div>
+            <div class="face"><span class="eye left glow"></span><span class="eye right glow"></span><span class="nose"></span></div>
+            <div class="tail"></div>
+          </div><span class="label">Gallery</span>
+        </a>
+      </nav>
+
+      <!-- Radios first (siblings of the panels) -->
+      <input type="radio" name="expTab" id="tab-uni" class="sr-only" checked>
+      <input type="radio" name="expTab" id="tab-intern" class="sr-only">
+
+      <!-- Badge bar -->
+      <div class="exp-toggle" role="tablist" aria-label="Experience sections">
+        <label for="tab-uni" class="section-badge">🎓 University</label>
+        <label for="tab-intern" class="section-badge">💼 Internships</label>
+      </div>
+
+      <!-- Experiences content -->
+      <!-- University -->
+      <section id="panel-uni" class="experience experience--uni" role="tabpanel" aria-labelledby="tab-uni">
+        <h2>University Experiences</h2>
+        <h3 class="subhead">Nanyang Technological University (NTU)</h3>
+
+        <div class="exp-table-wrap" role="region" aria-label="University experiences table">
+          <table class="exp-table">
+            <thead>
+              <tr>
+                <th class="company">Company / Institution</th>
+                <th class="work">Work Done</th>
+                <th class="photos">Photos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>University of Amsterdam (UvA)</strong>
+                  <div class="muted">Exchange Programme</div>
+                  <div class="muted">Spring Term 2025</div>
+                </td>
+                <td class="work">
+                  <ul>
+                    <li>Coursework in Data Processing, Modern Cryptography, Machine Learning, Multi-Agent Systems.</li>
+                  </ul>
+                </td>
+                <td class="photos">
+                  <img src="images/experience/uva1.jpg" alt="UVA" class="fade-up" style="--delay:.1s">
+                  <img src="images/experience/uva2.jpg" alt="UVA" class="fade-up" style="--delay:.2s">
+                </td>
+              </tr>
+
+              <tr>
+                <td><strong>NTU URECA</strong>
+                  <div class="muted">Undergraduate Research</div>
+                  <div class="muted">Aug 2024 - June 2025</div>
+                </td>
+                <td class="work">
+                  <ul>
+                    <li>Generative AI for disability & caregiving support.</li>
+                    <li>Built small tools for inclusive media and narration.</li>
+                  </ul>
+                </td>
+                <td class="photos">
+                  <img src="images/experience/ureca1.jpg" alt="NTU URECA" class="fade-up" style="--delay:.1s">
+                </td>
+              </tr>
+
+              <tr>
+                <td><strong>NTU Bike Rally</strong>
+                  <div class="muted">CCA / Event</div>
+                  <div class="muted">Aug 2023 - April 2024</div>
+                </td>
+                <td class="work">
+                  <ul>
+                    <li>Planned routes & logistics for flagship event.</li>
+                    <li>Conceptualised and designed branded merchandise.</li>
+                  </ul>
+                </td>
+                <td class="photos">
+                  <img src="images/experience/bike1.jpg" alt="NTU Bike Rally" class="fade-up" style="--delay:.1s">
+                  <img src="images/experience/merch.jpg" alt="NTU Bike Rally" class="fade-up" style="--delay:.2s">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Internships -->
+      <section id="panel-intern" class="experience experience--uni" role="tabpanel" aria-labelledby="tab-intern">
+        <h2>Internship Experiences</h2>
+        <h3 class="subhead">Industry Internships</h3>
+
+        <div class="exp-table-wrap" role="region" aria-label="Internship experiences table">
+          <table class="exp-table">
+            <thead>
+              <tr>
+                <th class="company">Company</th>
+                <th class="work">Work Done</th>
+                <th class="photos">Photos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Zhiyin Accessibility Technology Co., Ltd. (Shenzhen)</strong>
+                    <div class="muted">Assistive Product Design & Optimisation Intern</div>
+                    <div class="muted">May - Aug 2025</div>
+                  </td>
+                <td class="work">
+                  <ol>
+                    <li>Optimised sign language recognition with Mediapipe hand landmarks, feature engineering, and GRU; Optuna tuning.</li>
+                    <li>Applied VLMs (Hunyuan, Qianfan, GPT-4o, Gemini, Qingyan) to auto-generate Chinese narration for accessible films.</li>
+                    <li>Shipped a Flask + React narration editor; led user tests & presented to 20+ at Accessibility Exhibit.</li>
+                  </ol>
+                </td>
+                <td class="photos">
+                  <img src="images/experience/zhiyin1.jpg" alt="Zhiyin internship" class="fade-up" style="--delay:.1s">
+                  <img src="images/experience/zhiyin2.jpg" alt="Zhiyin internship" class="fade-up" style="--delay:.2s">
+                </td>
+              </tr>
+
+              <tr>
+                <td><strong>Oneject (Indonesia)</strong>
+                    <div class="muted">Supply Chain Analyst, Intern</div>
+                    <div class="muted">Jul — Aug 2024</div>
+                </td>
+                <td class="work">
+                  <ol>
+                    <li>Built forecasts & inventory models → reduced excess stock by 15%.</li>
+                    <li>Power BI dashboard (500+ materials, 30 products) → improved order accuracy by 20%.</li>
+                    <li>Predictive models → better timing (+10%) and lower holding costs (−8%).</li>
+                  </ol>
+                </td>
+                <td class="photos">
+                  <img src="images/experience/oneject1.jpg" alt="Oneject internship" class="fade-up" style="--delay:.1s">
+                  <img src="images/experience/oneject2.jpg" alt="Oneject internship" class="fade-up" style="--delay:.2s">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </main>
+
+        <footer class="site-footer">
+      <p>© <span id="year"></span> Pei Xin · Amsterdam</p>
+    </footer>
+  </body>
+</html>
+
