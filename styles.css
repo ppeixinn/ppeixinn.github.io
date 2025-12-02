@@ -52,6 +52,7 @@ html, body {
 }
 .btn svg { width: 18px; height: 18px; fill: currentColor; }
 .btn:hover, .btn:focus-visible { transform: translateY(-1px); border-color: color-mix(in oklab, var(--accent) 35%, transparent); }
+.btn.github{ color:#ffffff; }
 .btn.ig { color: #e6683c; }
 .btn.li { color: #0a66c2; }
 .btn.tg { color: #2aabee; }
