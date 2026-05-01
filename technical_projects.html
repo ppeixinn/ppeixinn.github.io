@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Technical Projects - Pei Xin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="description" content="Pei Xin's interests, technical projects, and gallery highlights." />
+  </head>
+  <body class="page">
+    <main class="container">
+      <section class="intro">
+        <div class="intro__text">
+          <h1>Interests &amp; Technical Projects</h1>
+          <p>Personal interests, selected technical projects, and gallery highlights.</p>
+        </div>
+        <div class="intro__image">
+          <img src="images/interests.png" alt="Interests and technical projects">
+        </div>
+      </section>
+
+      <!-- Cats-anime navigation -->
+      <nav class="cat-nav" aria-label="Site" aria-orientation="vertical">
+        <a class="cat-card" href="index.html">
+          <div class="cat"><div class="ear left"></div><div class="ear right"></div>
+            <div class="face"><span class="eye left"></span><span class="eye right"></span><span class="nose"></span></div>
+            <div class="tail"></div>
+          </div><span class="label">Home</span>
+        </a>
+
+        <a class="cat-card" href="experiences.html">
+          <div class="cat tabby"><div class="ear left"></div><div class="ear right"></div>
+            <div class="face"><span class="eye left"></span><span class="eye right"></span><span class="nose"></span>
+              <span class="stripe s1"></span><span class="stripe s2"></span>
+            </div><div class="tail"></div>
+          </div><span class="label">Experiences</span>
+        </a>
+
+        <a class="cat-card" href="#technical-projects" aria-current="page">
+          <div class="cat calico"><div class="ear left"></div><div class="ear right"></div>
+            <div class="face"><span class="eye left"></span><span class="eye right"></span><span class="nose"></span></div>
+            <div class="patch p1"></div><div class="patch p2"></div><div class="tail"></div>
+          </div><span class="label">Projects</span>
+        </a>
+
+        <a class="cat-card" href="#gallery">
+          <div class="cat black"><div class="ear left"></div><div class="ear right"></div>
+            <div class="face"><span class="eye left glow"></span><span class="eye right glow"></span><span class="nose"></span></div>
+            <div class="tail"></div>
+          </div><span class="label">Gallery</span>
+        </a>
+      </nav>
+
+      <section class="content-section interests-section zigzag" id="interests" aria-labelledby="interests-title">
+        <div class="section-heading">
+          <p class="eyebrow">Interests</p>
+          <h2 id="interests-title">Outside the classroom</h2>
+          <p>A glimpse into the activities and hobbies I enjoy.</p>
+        </div>
+
+        <article class="zz-item">
+          <div class="zz-media">
+            <img src="images/interests/photography.jpg" alt="Photography">
+          </div>
+          <div class="zz-text">
+            <h3>Photography</h3>
+            <p>I enjoy capturing moments and landscapes through my camera lens.</p>
+            <p class="muted">Travel photography, nature walks, photo editing</p>
+          </div>
+        </article>
+
+        <article class="zz-item">
+          <div class="zz-media">
+            <img src="images/interests/cooking.jpg" alt="Cooking">
+          </div>
+          <div class="zz-text">
+            <h3>Cooking</h3>
+            <p>Experimenting with new recipes and cuisines is a passion of mine.</p>
+            <p class="muted">Trying out new recipes, baking, food blogging</p>
+          </div>
+        </article>
+
+        <article class="zz-item">
+          <div class="zz-media">
+            <img src="images/interests/travelling1.jpg" alt="Travelling">
+          </div>
+          <div class="zz-text">
+            <h3>Travelling</h3>
+            <p>I love exploring new places and cultures.</p>
+            <p class="muted">City tours, nature hikes, cultural experiences</p>
+          </div>
+        </article>
+
+        <article class="zz-item">
+          <div class="zz-media">
+            <img src="images/interests/hiking.jpg" alt="Hiking">
+          </div>
+          <div class="zz-text">
+            <h3>Fitness</h3>
+            <p>I love staying active and healthy.</p>
+            <p class="muted">Running, hiking, swimming, gym workouts, tennis, netball</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="projects" id="technical-projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="projects-title">Technical Projects</h2>
+          <p>Applied AI and data science projects across education, real estate, agri-tech, and chatbot interfaces.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-card__top">
+              <span class="project-card__category">Multimodal AI</span>
+              <a class="project-card__link" href="https://github.com/ppeixinn/Retrieval-Augmented-Generation" target="_blank" rel="noopener">GitHub</a>
+            </div>
+            <h3>Multimodal RAG Learning Assistant</h3>
+            <p>Built a retrieval-augmented generation pipeline that retrieves text and image context from exam papers, then guides learners step by step without giving away final answers.</p>
+            <ul class="tech-list" aria-label="Technologies used">
+              <li>LangChain</li>
+              <li>GPT-4o</li>
+              <li>CLIP</li>
+              <li>FAISS</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__top">
+              <span class="project-card__category">Predictive Modeling</span>
+              <a class="project-card__link" href="https://github.com/ppeixinn/Dutch-Housing-Prices-Machine-Learning-Predictions" target="_blank" rel="noopener">GitHub</a>
+            </div>
+            <h3>Netherlands Property Price Prediction</h3>
+            <p>Cleaned housing listing data, engineered categorical and text-derived features, and compared regression models to identify the strongest real-estate pricing signals.</p>
+            <ul class="tech-list" aria-label="Technologies used">
+              <li>Python</li>
+              <li>XGBoost</li>
+              <li>Random Forest</li>
+              <li>Feature Engineering</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__top">
+              <span class="project-card__category">Agri-Tech ML</span>
+              <a class="project-card__link" href="https://github.com/ppeixinn/AgriTech-Machine-Leaning-Predictions" target="_blank" rel="noopener">GitHub</a>
+            </div>
+            <h3>Controlled Farming Predictions</h3>
+            <p>Created an end-to-end machine learning workflow for sensor-driven farming, including preprocessing, EDA, model training, and evaluation for temperature prediction.</p>
+            <ul class="tech-list" aria-label="Technologies used">
+              <li>Python</li>
+              <li>SQL</li>
+              <li>CatBoost</li>
+              <li>EDA</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__top">
+              <span class="project-card__category">Chatbot Prototype</span>
+              <a class="project-card__link" href="https://github.com/ppeixinn/peixinchatbot" target="_blank" rel="noopener">GitHub</a>
+            </div>
+            <h3>Streamlit Chatbot</h3>
+            <p>Built a lightweight chatbot prototype with a Streamlit interface, focused on making conversational AI experiments easy to run and share.</p>
+            <ul class="tech-list" aria-label="Technologies used">
+              <li>Streamlit</li>
+              <li>Python</li>
+              <li>Chatbot UI</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section gallery" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <p class="eyebrow">Gallery</p>
+          <h2 id="gallery-title">Places and music</h2>
+          <p>A collection of my favorite images and artwork.</p>
+        </div>
+
+        <input type="radio" name="galleryTab" id="tab-places" checked hidden>
+        <input type="radio" name="galleryTab" id="tab-music" hidden>
+
+        <div class="tabs">
+          <label for="tab-places" class="tab">Places I Went</label>
+          <label for="tab-music" class="tab">Music I Listen To</label>
+        </div>
+
+        <div class="panels">
+          <div class="panel panel-places">
+            <div class="grid">
+              <article class="card">
+                <img src="images/places/netherlands1.jpg" alt="Utrecht canals">
+                <div class="card__body">
+                  <h3 class="card__title">Utrecht, Netherlands</h3>
+                  <p class="card__desc">31 August 2025</p>
+                </div>
+              </article>
+              <article class="card">
+                <img src="images/places/brussels.jpg" alt="Brussels skyline">
+                <div class="card__body">
+                  <h3 class="card__title">Brussels, Belgium</h3>
+                  <p class="card__desc">6 - 7 September 2025</p>
+                </div>
+              </article>
+              <article class="card">
+                <img src="images/places/shenzhen.jpg" alt="Shenzhen skyline">
+                <div class="card__body">
+                  <h3 class="card__title">Shenzhen, China</h3>
+                  <p class="card__desc">15 May - 9 August 2025</p>
+                </div>
+              </article>
+              <article class="card">
+                <img src="images/places/fukuoka.jpg" alt="Fukuoka Mount Aso">
+                <div class="card__body">
+                  <h3 class="card__title">Fukuoka, Japan</h3>
+                  <p class="card__desc">23-30 December 2024</p>
+                </div>
+              </article>
+              <article class="card">
+                <img src="images/places/taiwan.jpg" alt="Taipei night market">
+                <div class="card__body">
+                  <h3 class="card__title">Taipei, Taiwan</h3>
+                  <p class="card__desc">16-21 December 2024</p>
+                </div>
+              </article>
+              <article class="card">
+                <img src="images/places/bali.jpg" alt="Bali sunset">
+                <div class="card__body">
+                  <h3 class="card__title">Bali, Indonesia</h3>
+                  <p class="card__desc">9-12 December 2024</p>
+                </div>
+              </article>
+              <article class="card">
+                <img src="images/places/jakarta.jpg" alt="Jakarta internship">
+                <div class="card__body">
+                  <h3 class="card__title">Jakarta, Indonesia</h3>
+                  <p class="card__desc">25 July - 9 August 2024</p>
+                </div>
+              </article>
+              <article class="card">
+                <img src="images/places/taiwan2.jpg" alt="First Taiwan trip">
+                <div class="card__body">
+                  <h3 class="card__title">Taipei, Taiwan</h3>
+                  <p class="card__desc">April 2023</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="panel panel-music">
+            <div class="grid">
+              <article class="card">
+                <img src="images/music/music1.jpg" alt="Joker Xue concert">
+                <div class="card__body">
+                  <h3 class="card__title">薛之谦 Joker Xue's Concert</h3>
+                  <p class="card__desc">15 February 2025.</p>
+                </div>
+              </article>
+              <article class="card">
+                <img src="images/music/music2.jpg" alt="Money's Concert">
+                <div class="card__body">
+                  <h3 class="card__title">门尼 Money's Concert</h3>
+                  <p class="card__desc">22 June 2025.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> https://ppeixinn.github.io/ </p>
+    </footer>
+  </body>
+</html>
