@@ -471,6 +471,114 @@ html, body {
 /* ====== End of gallery page layout ====== */
 
 
+/* ====== Projects section ====== */
+.projects{
+  max-width: 1100px;
+  margin: clamp(2rem, 5vw, 4rem) auto 0;
+  padding: 0 1rem;
+}
+
+.section-heading{
+  max-width: 760px;
+  margin-bottom: 1rem;
+}
+
+.section-heading h2{
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+  line-height: 1.15;
+  margin: .15rem 0 .45rem;
+}
+
+.section-heading p{
+  color: var(--muted);
+}
+
+.eyebrow{
+  color: var(--accent);
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.project-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.project-card{
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  min-height: 100%;
+  padding: 1.1rem;
+  border: 1px solid color-mix(in oklab, var(--text) 12%, transparent);
+  border-radius: 16px;
+  background: color-mix(in oklab, var(--card) 94%, transparent);
+  box-shadow: 0 12px 28px rgba(0,0,0,.18);
+}
+
+.project-card__top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+}
+
+.project-card__category{
+  color: var(--accent);
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.project-card h3{
+  font-size: 1.15rem;
+  line-height: 1.25;
+}
+
+.project-card p{
+  color: var(--muted);
+}
+
+.project-card__link{
+  flex: 0 0 auto;
+  color: var(--text);
+  text-decoration: none;
+  font-size: .86rem;
+  font-weight: 700;
+  padding: .35rem .6rem;
+  border: 1px solid color-mix(in oklab, var(--accent) 35%, transparent);
+  border-radius: 8px;
+}
+
+.project-card__link:hover,
+.project-card__link:focus-visible{
+  background: color-mix(in oklab, var(--accent) 18%, transparent);
+}
+
+.tech-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin-top: auto;
+  list-style: none;
+}
+
+.tech-list li{
+  color: var(--text);
+  font-size: .82rem;
+  line-height: 1;
+  padding: .35rem .5rem;
+  border: 1px solid color-mix(in oklab, var(--text) 10%, transparent);
+  border-radius: 8px;
+  background: rgba(255,255,255,.04);
+}
+/* ====== End of projects section ====== */
+
+
 /* Footer */
 .site-footer {
   color: var(--muted);
@@ -483,6 +591,13 @@ html, body {
   .intro { 
     grid-template-columns: 1fr; 
     margin-block-end: clamp(2rem, 6vw, 5rem)}
+  .project-grid{
+    grid-template-columns: 1fr;
+  }
+  .project-card__top{
+    align-items: flex-start;
+    flex-direction: column;
+  }
   .card{
     grid-template-columns: 1fr;
   }
