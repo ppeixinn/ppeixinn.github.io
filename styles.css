@@ -435,9 +435,9 @@ html, body {
   .tab:hover, .tab:focus-visible{ border-color:var(--accent); box-shadow:0 0 0 3px rgb(255 183 3 / .15); }
   .tab:active{ transform:translateY(1px); background-color: var(--accent);}
   /* active tab styling */
-  #tab-books:checked ~ label[for="tab-books"],
-  #tab-places:checked ~ label[for="tab-places"],
-  #tab-music:checked ~ label[for="tab-music"]{
+  #tab-places:checked ~ .tabs label[for="tab-places"],
+  #tab-music:checked ~ .tabs label[for="tab-music"],
+  #tab-interests:checked ~ .tabs label[for="tab-interests"]{
     background:var(--link); color:var(--accent); border-color:transparent;
   }
 
@@ -447,9 +447,9 @@ html, body {
   @keyframes fade{from{opacity:.6;transform:translateY(4px)} to{opacity:1;transform:none}}
 
   /* show the correct panel when its radio is checked */
-  #tab-books:checked ~ .panels .panel-books{display:block;}
   #tab-places:checked ~ .panels .panel-places{display:block;}
   #tab-music:checked ~ .panels .panel-music{display:block;}
+  #tab-interests:checked ~ .panels .panel-interests{display:block;}
 
   /* grid + card */
   .grid{display:grid; gap:1rem; grid-template-columns:repeat(3,minmax(0,1fr));}
